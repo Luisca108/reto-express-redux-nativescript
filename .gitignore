@@ -1,0 +1,11 @@
+node_modules/
+platforms/
+hooks/
+.angular/
+.gradle/
+dist/
+coverage/
+npm-debug.log*
+api/database.sqlite
+api/database.sqlite-*
+.env
