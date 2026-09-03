@@ -1,0 +1,85 @@
+.page {
+  background-color: #f6f8fa;
+}
+
+ActionBar {
+  background-color: #102a43;
+  color: #ffffff;
+}
+
+.screen {
+  padding: 14;
+}
+
+.search-form {
+  margin-bottom: 10;
+}
+
+.search-input {
+  height: 46;
+  padding: 0 12;
+  border-width: 1;
+  border-color: #bcccdc;
+  border-radius: 8;
+  background-color: #ffffff;
+  font-size: 16;
+}
+
+.primary-button {
+  height: 46;
+  margin-top: 10;
+  border-radius: 8;
+  background-color: #2f80ed;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.status {
+  margin-bottom: 10;
+  color: #52606d;
+  font-size: 13;
+}
+
+.list {
+  separator-color: transparent;
+}
+
+.item-row {
+  padding: 12;
+  margin-bottom: 9;
+  border-radius: 8;
+  background-color: #ffffff;
+  border-width: 1;
+  border-color: #d6dee6;
+}
+
+.item-copy {
+  width: 76%;
+}
+
+.item-title {
+  font-size: 16;
+  font-weight: 700;
+  color: #18222c;
+}
+
+.item-meta {
+  margin-top: 3;
+  font-size: 13;
+  color: #2f80ed;
+}
+
+.item-summary {
+  margin-top: 5;
+  font-size: 13;
+  color: #52606d;
+}
+
+.favorite-button {
+  width: 62;
+  height: 42;
+  border-radius: 8;
+  background-color: #ffb703;
+  color: #18222c;
+  font-weight: 700;
+}
