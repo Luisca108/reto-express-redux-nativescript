@@ -1,0 +1,24 @@
+<Page class="page">
+  <ActionBar title="Favoritos"></ActionBar>
+
+  <StackLayout class="screen">
+    <Label
+      *ngIf="favorites.length === 0"
+      text="Guarda favoritos desde la busqueda para verlos aqui."
+      textWrap="true"
+      class="empty">
+    </Label>
+
+    <ListView *ngIf="favorites.length > 0" [items]="favorites" class="list">
+      <ng-template let-book="item">
+        <FlexboxLayout flexDirection="row" alignItems="center" class="item-row">
+          <StackLayout class="item-copy">
+            <Label [text]="book.title" textWrap="true" class="item-title"></Label>
+            <Label [text]="book.author + ' - ' + book.category" class="item-meta"></Label>
+          </StackLayout>
+          <Button text="Leer ahora" (tap)="readNow(book)" class="read-button"></Button>
+        </FlexboxLayout>
+      </ng-template>
+    </ListView>
+  </StackLayout>
+</Page>
