@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="LaunchScreenThemeBase" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <item name="android:windowSplashScreenBackground">@color/ns_splash_background</item>
+    <item name="android:windowSplashScreenAnimatedIcon">@drawable/app_icon</item>
+    <item name="android:postSplashScreenTheme">@style/AppTheme</item>
+  </style>
+
+  <style name="LaunchScreenTheme" parent="LaunchScreenThemeBase" />
+</resources>
