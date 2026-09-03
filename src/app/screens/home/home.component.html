@@ -1,0 +1,38 @@
+<Page class="page">
+  <ActionBar title="Biblioteca Redux"></ActionBar>
+
+  <GridLayout rows="auto,auto,*" class="screen">
+    <StackLayout row="0" class="header">
+      <Label [text]="'Hola, ' + username" class="title"></Label>
+      <Label text="Selecciona favoritos y marca que quieres leer ahora." textWrap="true" class="subtitle"></Label>
+    </StackLayout>
+
+    <FlexboxLayout row="1" flexDirection="row" justifyContent="space-between" class="nav-row">
+      <Button text="Buscar" (tap)="goToSearch()" class="nav-button"></Button>
+      <Button text="Favoritos" (tap)="goToFavorites()" class="nav-button"></Button>
+      <Button text="Settings" (tap)="goToSettings()" class="nav-button"></Button>
+    </FlexboxLayout>
+
+    <StackLayout row="2" class="section">
+      <Label text="Leer ahora desde Redux" class="section-title"></Label>
+      <Label
+        *ngIf="readingItems.length === 0"
+        text="Aun no has elegido libros desde Favoritos."
+        textWrap="true"
+        class="empty">
+      </Label>
+
+      <ListView *ngIf="readingItems.length > 0" [items]="readingItems" class="list">
+        <ng-template let-book="item">
+          <FlexboxLayout flexDirection="row" alignItems="center" class="item-row">
+            <Label text=">" class="item-icon"></Label>
+            <StackLayout class="item-copy">
+              <Label [text]="book.title" textWrap="true" class="item-title"></Label>
+              <Label [text]="book.author + ' - ' + book.category" class="item-meta"></Label>
+            </StackLayout>
+          </FlexboxLayout>
+        </ng-template>
+      </ListView>
+    </StackLayout>
+  </GridLayout>
+</Page>
