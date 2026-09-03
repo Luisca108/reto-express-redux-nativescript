@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Angular desde cero",
+    "author": "Equipo Mobile",
+    "category": "Angular",
+    "summary": "Guia practica para crear componentes, formularios y servicios."
+  },
+  {
+    "title": "Redux aplicado",
+    "author": "Curso Nativo",
+    "category": "Estado",
+    "summary": "Patrones para despachar acciones y seleccionar datos del store."
+  },
+  {
+    "title": "Express para APIs",
+    "author": "Backend Lab",
+    "category": "Backend",
+    "summary": "Webservices GET con filtros por querystring y datos persistidos."
+  },
+  {
+    "title": "SQLite movil y local",
+    "author": "Data Studio",
+    "category": "Base de datos",
+    "summary": "Persistencia simple para prototipos y servicios pequenos."
+  },
+  {
+    "title": "UX de busquedas",
+    "author": "Diseno App",
+    "category": "UX",
+    "summary": "Interfaces claras para encontrar resultados y guardar favoritos."
+  },
+  {
+    "title": "Ngrok en desarrollo",
+    "author": "Dev Tools",
+    "category": "Herramientas",
+    "summary": "Configuracion de URLs publicas para conectar apps nativas a APIs locales."
+  }
+]
