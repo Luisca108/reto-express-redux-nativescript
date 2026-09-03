@@ -1,0 +1,13 @@
+<Page class="page">
+  <ActionBar title="Settings"></ActionBar>
+
+  <StackLayout class="screen">
+    <Label text="Nombre de usuario" class="label"></Label>
+    <TextField
+      hint="Escribe tu nombre"
+      [(ngModel)]="usernameDraft"
+      class="input">
+    </TextField>
+    <Button text="Guardar configuracion" (tap)="save()" class="primary-button"></Button>
+  </StackLayout>
+</Page>
