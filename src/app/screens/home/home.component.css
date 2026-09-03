@@ -1,0 +1,94 @@
+.page {
+  background-color: #f6f8fa;
+  color: #18222c;
+}
+
+ActionBar {
+  background-color: #102a43;
+  color: #ffffff;
+}
+
+.screen {
+  padding: 16;
+}
+
+.header {
+  margin-bottom: 14;
+}
+
+.title {
+  font-size: 27;
+  font-weight: 700;
+  color: #102a43;
+}
+
+.subtitle {
+  margin-top: 4;
+  font-size: 15;
+  color: #52606d;
+}
+
+.nav-row {
+  margin-bottom: 16;
+}
+
+.nav-button {
+  width: 31%;
+  height: 44;
+  border-radius: 8;
+  background-color: #2f80ed;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.section-title {
+  margin-bottom: 10;
+  font-size: 18;
+  font-weight: 700;
+  color: #18222c;
+}
+
+.empty {
+  padding: 14;
+  border-width: 1;
+  border-color: #d6dee6;
+  border-radius: 8;
+  background-color: #ffffff;
+  color: #66788a;
+}
+
+.list {
+  separator-color: transparent;
+}
+
+.item-row {
+  padding: 12;
+  margin-bottom: 8;
+  border-radius: 8;
+  background-color: #ffffff;
+  border-width: 1;
+  border-color: #d6dee6;
+}
+
+.item-icon {
+  width: 28;
+  color: #2f80ed;
+  font-size: 20;
+  font-weight: 700;
+}
+
+.item-copy {
+  width: 88%;
+}
+
+.item-title {
+  font-size: 16;
+  font-weight: 700;
+  color: #18222c;
+}
+
+.item-meta {
+  margin-top: 3;
+  font-size: 13;
+  color: #66788a;
+}
