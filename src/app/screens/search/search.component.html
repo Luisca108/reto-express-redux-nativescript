@@ -1,0 +1,39 @@
+<Page class="page">
+  <ActionBar title="Buscar libros"></ActionBar>
+
+  <GridLayout rows="auto,auto,*" class="screen">
+    <StackLayout row="0" class="search-form">
+      <TextField
+        hint="Texto de busqueda"
+        [(ngModel)]="query"
+        returnKeyType="search"
+        (returnPress)="search()"
+        class="search-input">
+      </TextField>
+      <Button text="Buscar en API Express" (tap)="search()" class="primary-button"></Button>
+    </StackLayout>
+
+    <Label
+      row="1"
+      [text]="isLoading ? 'Buscando...' : books.length + ' resultado(s)'"
+      class="status">
+    </Label>
+
+    <ListView row="2" [items]="books" class="list">
+      <ng-template let-book="item">
+        <FlexboxLayout flexDirection="row" alignItems="center" class="item-row">
+          <StackLayout class="item-copy">
+            <Label [text]="book.title" textWrap="true" class="item-title"></Label>
+            <Label [text]="book.author + ' - ' + book.category" class="item-meta"></Label>
+            <Label [text]="book.summary" textWrap="true" class="item-summary"></Label>
+          </StackLayout>
+          <Button
+            [text]="isFavorite(book) ? 'OK' : 'Fav'"
+            (tap)="addFavorite(book)"
+            class="favorite-button">
+          </Button>
+        </FlexboxLayout>
+      </ng-template>
+    </ListView>
+  </GridLayout>
+</Page>
