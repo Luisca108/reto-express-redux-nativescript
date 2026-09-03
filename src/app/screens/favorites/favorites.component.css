@@ -1,0 +1,60 @@
+.page {
+  background-color: #f6f8fa;
+}
+
+ActionBar {
+  background-color: #102a43;
+  color: #ffffff;
+}
+
+.screen {
+  padding: 14;
+}
+
+.empty {
+  padding: 14;
+  border-width: 1;
+  border-color: #d6dee6;
+  border-radius: 8;
+  background-color: #ffffff;
+  color: #66788a;
+}
+
+.list {
+  separator-color: transparent;
+}
+
+.item-row {
+  padding: 12;
+  margin-bottom: 9;
+  border-radius: 8;
+  background-color: #ffffff;
+  border-width: 1;
+  border-color: #d6dee6;
+}
+
+.item-copy {
+  width: 66%;
+}
+
+.item-title {
+  font-size: 16;
+  font-weight: 700;
+  color: #18222c;
+}
+
+.item-meta {
+  margin-top: 3;
+  font-size: 13;
+  color: #52606d;
+}
+
+.read-button {
+  width: 102;
+  height: 42;
+  border-radius: 8;
+  background-color: #2f80ed;
+  color: #ffffff;
+  font-size: 13;
+  font-weight: 700;
+}
